@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link href="/fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</style>
+</head>
+
+<body>
+    <!--Cabecera-->
+    <header>
+       <nav class="nav">
+        <div class="logo">Proyecto</div>
+        <ul class="menu">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Tienda</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Acerca de</a></li>
+        </ul>
+       </nav>
+    </header>
+    <br><br>
+    <div class="container">
+        <div class="formulario" style="width: 30%; margin: 0 auto;color: aliceblue;">
+            <h2 class="fw-lighter", style="color: aliceblue;">Bienvenido al portal de Inicio de sesión</h2>
+            <p class="fw-lighter">
+                Accede como personal o administrador y disfruta de recursos exclusivos.</br></br>
+                Agradecemos tu dedicación y te ofrecemos soporte en caso de necesitarlo.</p>
+                
+                ¡Disfruta de tu experiencia en nuestra plataforma!</p>
+        </div>
+        
+
+        <div class="formulario" style="width: 30%; margin: 0 auto; color: aliceblue;" >
+            <h2>Inicio de Sesión</h2>
+  
+            <form method="POST" action="validar_login.php">
+              <div>
+                <label for="usuario" style="color: aliceblue;">Usuario:</label></br>
+                <input type="text" id="usuario" name="usuario" required>
+              </div></br></br>
+              
+              <div>
+                <label for="contrasena" style="color: aliceblue">Contraseña:</label></br>
+                <input type="password" id="contrasena" name="contrasena" required></br></br>
+              </div>
+
+              <div id="vinc"><a onmouseover="javascript: void(document.getElementById('vinc').style.fontSize='2em')" 
+                onmouseout="javascript: void(document.getElementById('vinc').style.fontSize='1em')">
+                <button type="submit" class="btn btn-primary" style="background-color: rgba(92, 80, 67, 0.74);">Iniciar Sesión </button>
+                </a>
+                
+            </div>
+            
+                            
+
+        </div>
+
+    </div>
+    
+   
+    <!--Pie de pagina-->
+    <footer style="color: aliceblue;">
+        <p>&copy; 2023 Hdelapuente. Todos los derechos reservados.</p>
+    </footer>
+
+
+    
+    
+    <script src="menu.js"></script> 
+</body>
+
+</html>
